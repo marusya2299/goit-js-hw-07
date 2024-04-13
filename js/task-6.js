@@ -5,7 +5,6 @@ const input = controls.querySelector("input");
 const boxes = document.querySelector('#boxes');
 const create = document.querySelector('[data-create]');
 const destroy = document.querySelector('[data-destroy]');
-let amount = 0;
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
