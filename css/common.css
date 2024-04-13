@@ -22,7 +22,8 @@ ol {
 
 .gallery {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 24px;
 }
@@ -30,4 +31,5 @@ ol {
 .gallery img {
   width: 360px;
   height: 300px;
+  object-fit: cover;
 }
