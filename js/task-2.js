@@ -28,12 +28,18 @@ const images = [
 ];
 
 const listGallery = document.querySelector(".gallery");
+
+const fragment = document.createDocumentFragment();
+
 images.forEach(element => {
     const listGalleryItem = document.createElement("li");
-    listGallery.append(listGalleryItem);
 
     const listGalleryImage = document.createElement("img");
-    listGalleryItem.append(listGalleryImage);
     listGalleryImage.src = element.url;
     listGalleryImage.alt = element.url;
+
+    listGalleryItem.append(listGalleryImage);
+    fragment.append(listGalleryItem);
 });
+
+listGallery.append(fragment);

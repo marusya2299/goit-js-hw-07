@@ -27,7 +27,7 @@ function createBoxes(amount) {
         fragment.append(box);
     }
 
-    boxes.appendChild(fragment);
+    boxes.append(fragment);
 }
 
 create.addEventListener("click", (event) => {
